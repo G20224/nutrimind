@@ -1,5 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0px;
 }
 .button {
     display: flex;
@@ -49,9 +50,10 @@ body {
     flex-direction: column;
     align-items: flex-start;
     background: #F9F9F9;
-    padding: 60px 87px 82px 66px;
-    margin-right: 81px;
+    padding: 7.17% 6.04% 9.8% 4.58%;
+    margin-right: 5.63%;
     box-shadow: 0px 4px 5px #00000040;
+    padding-bottom: 19%;
 }
 .column4 {
     display: flex;
@@ -196,33 +198,8 @@ body {
 }
 .row-view5 {
     display: flex;
-    align-items: flex-start;
-    margin-bottom: 10px;
-    margin-left: 2px;
-    margin-right: 2px;
-}
-.row-view6 {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 10px;
-}
-.row-view7 {
-    display: flex;
     align-items: center;
-    margin-bottom: 9px;
-    margin-left: 1px;
-}
-.row-view8 {
-    display: flex;
-    align-items: center;
-    margin-bottom: 11px;
-    margin-left: 1px;
-    margin-right: 1px;
-}
-.row-view9 {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .row-view10 {
     display: flex;
@@ -275,10 +252,9 @@ body {
 }
 .text3 {
     color: #000000;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     width: 77px;
-    font-family: ;
 }
 .text4 {
     color: #000000;
