@@ -67,30 +67,10 @@ body {
     background: #FFFFFF;
 }
 .image {
-    width: 12px;
-    height: 8px;
+    width: 40%;
     object-fit: fill;
-}
-.image2 {
-    width: 4px;
-    height: 3px;
-    margin-right: 2px;
-    object-fit: fill;
-}
-.image3 {
-    width: 4px;
-    height: 3px;
-    object-fit: fill;
-}
-.image4 {
-    width: 35px;
-    height: 15px;
-    object-fit: fill;
-}
-.image5 {
-    width: 35px;
-    height: 3px;
-    object-fit: fill;
+    margin-right: 60%;
+    margin-bottom: 2%;
 }
 .image6 {
     width: 26px;
@@ -170,6 +150,8 @@ body {
     width: 154px;
     background: none;
     border: none;
+    font-family: 'Montserrat',sans-serif;
+    margin-left: 10%;
 }
 .row-view {
     align-self: stretch;
@@ -297,8 +279,10 @@ body {
 .text10 {
     color: #FFFFFF;
     font-size: 16px;
+    font-family: 'Montserrat',sans-serif;
 }
 .text11 {
     color: #878787;
     font-size: 16px;
+    font-family: 'Montserrat',sans-serif;
 }
