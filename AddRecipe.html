@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Recipes-Mylistadd</title>
+	<style>
+		body {
+			font-family: system-ui;
+		}
+		.box {
+			flex: 1;
+			align-self: stretch;
+		}
+		.box2 {
+			width: 500px;
+			box-sizing: border-box;
+			height: 45px;
+			box-sizing: border-box;
+			background: #FFFFFF;
+			border-radius: 15px;
+			border: 1px solid #B5B5B5;
+		}
+		.button {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			background: #FFFFFF;
+			border-radius: 15px;
+			border: 1px solid #B5B5B5;
+			padding: 14px 240px;
+			text-align: left;
+		}
+		.button2 {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			background: #44A24C;
+			border-radius: 25px;
+			border: none;
+			padding: 9px 77px;
+			margin-left: 127px;
+			text-align: left;
+		}
+		.column {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			margin-top: 2px;
+		}
+		.column2 {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			background: #F9F9F9;
+			padding: 60px 87px 82px 66px;
+			margin-right: 41px;
+			box-shadow: 0px 4px 5px #00000040;
+		}
+		.column3 {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			margin-top: 37px;
+		}
+		.column4 {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			background: #FFFFFF;
+			border-radius: 30px;
+			border: 1px solid #B5B5B5;
+			padding: 31px 59px;
+			margin-left: 185px;
+		}
+		.column5 {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			margin-bottom: 10px;
+		}
+		.column6 {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			margin-bottom: 22px;
+		}
+		.column7 {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			margin-bottom: 40px;
+		}
+		.contain {
+			display: flex;
+			flex-direction: column;
+			background: #FFFFFF;
+		}
+		.image {
+			width: 38px;
+			height: 13px;
+			margin-bottom: 1px;
+			object-fit: fill;
+		}
+		.image2 {
+			width: 38px;
+			height: 18px;
+			margin-right: 4px;
+			object-fit: fill;
+		}
+		.image3 {
+			width: 38px;
+			height: 1px;
+			object-fit: fill;
+		}
+		.image4 {
+			width: 26px;
+			height: 24px;
+			object-fit: fill;
+		}
+		.image5 {
+			width: 40px;
+			height: 44px;
+			margin-top: 2px;
+			margin-right: 28px;
+			object-fit: fill;
+		}
+		.image6 {
+			width: 50px;
+			height: 50px;
+			object-fit: fill;
+		}
+		.image7 {
+			width: 28px;
+			height: 26px;
+			margin-top: 3px;
+			margin-right: 10px;
+			object-fit: fill;
+		}
+		.image8 {
+			width: 28px;
+			height: 28px;
+			margin-top: 3px;
+			margin-right: 16px;
+			object-fit: fill;
+		}
+		.image9 {
+			width: 28px;
+			height: 28px;
+			margin-right: 15px;
+			object-fit: fill;
+		}
+		.image10 {
+			width: 28px;
+			height: 28px;
+			margin-right: 22px;
+			object-fit: fill;
+		}
+		.image11 {
+			width: 29px;
+			height: 24px;
+			margin-right: 19px;
+			object-fit: fill;
+		}
+		.image12 {
+			width: 28px;
+			height: 28px;
+			margin-right: 7px;
+			object-fit: fill;
+		}
+		.image13 {
+			width: 30px;
+			height: 28px;
+			margin-right: 21px;
+			object-fit: fill;
+		}
+		.image14 {
+			width: 28px;
+			height: 29px;
+			margin-right: 22px;
+			object-fit: fill;
+		}
+		.image15 {
+			width: 20px;
+			height: 17px;
+			object-fit: fill;
+		}
+		.image16 {
+			width: 21px;
+			height: 20px;
+			margin-right: 13px;
+			object-fit: fill;
+		}
+		.input {
+			color: #B5B5B5;
+			font-size: 15px;
+			background: #FFFFFF;
+			border-radius: 15px;
+			border: 1px solid #B5B5B5;
+			padding: 14px 8px;
+		}
+		.input2 {
+			color: #B5B5B5;
+			font-size: 15px;
+			margin-right: 40px;
+			background: #FFFFFF;
+			border-radius: 15px;
+			border: 1px solid #B5B5B5;
+			padding: 14px 8px;
+		}
+		.input3 {
+			color: #B5B5B5;
+			font-size: 15px;
+			background: #FFFFFF;
+			border-radius: 15px;
+			border: 1px solid #B5B5B5;
+			padding: 14px 9px;
+		}
+		.input4 {
+			color: #B5B5B5;
+			font-size: 15px;
+			width: 118px;
+			box-sizing: border-box;
+			background: none;
+			border: none;
+			padding-top: 2px;
+			padding-bottom: 2px;
+		}
+		.row-view {
+			align-self: stretch;
+			display: flex;
+			align-items: flex-start;
+			background: #F9F9F9;
+			padding: 23px 62px;
+			box-shadow: 0px 3px 8px #0505050D;
+		}
+		.row-view2 {
+			display: flex;
+			align-items: center;
+		}
+		.row-view3 {
+			display: flex;
+			align-items: center;
+			background: #F9F9F9;
+			border-radius: 5px;
+			border: 1px solid #C4C4C4;
+			margin-top: 6px;
+			margin-right: 202px;
+		}
+		.row-view4 {
+			display: flex;
+			align-items: flex-start;
+			margin-bottom: 132px;
+		}
+		.row-view5 {
+			display: flex;
+			align-items: flex-start;
+			margin-bottom: 10px;
+			margin-left: 2px;
+			margin-right: 2px;
+		}
+		.row-view6 {
+			display: flex;
+			align-items: flex-start;
+			margin-bottom: 10px;
+		}
+		.row-view7 {
+			display: flex;
+			align-items: center;
+			margin-bottom: 9px;
+			margin-left: 1px;
+		}
+		.row-view8 {
+			display: flex;
+			align-items: center;
+			margin-bottom: 11px;
+			margin-left: 1px;
+			margin-right: 1px;
+		}
+		.row-view9 {
+			display: flex;
+			align-items: center;
+			margin-bottom: 10px;
+		}
+		.row-view10 {
+			display: flex;
+			align-items: center;
+			margin-bottom: 175px;
+		}
+		.row-view11 {
+			display: flex;
+			align-items: center;
+			margin-bottom: 15px;
+		}
+		.row-view12 {
+			display: flex;
+			align-items: center;
+			margin-left: 1px;
+		}
+		.row-view13 {
+			display: flex;
+			align-items: flex-start;
+			margin-bottom: 8px;
+		}
+		.row-view14 {
+			display: flex;
+			align-items: flex-start;
+		}
+		.row-view15 {
+			width: 500px;
+			box-sizing: border-box;
+			height: 45px;
+			box-sizing: border-box;
+			display: flex;
+			align-items: center;
+			background: #FFFFFF;
+			border-radius: 15px;
+			border: 1px solid #B5B5B5;
+			padding: 12px 13px;
+		}
+		.scroll-view {
+			height: 1090px;
+			align-self: stretch;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			background: #F9F9F9;
+		}
+		.text {
+			color: #3C6B2B;
+			font-size: 25px;
+		}
+		.text2 {
+			color: #7C7C7C;
+			font-size: 16px;
+			text-align: center;
+			margin-right: 188px;
+			width: 102px;
+		}
+		.text3 {
+			color: #000000;
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			width: 77px;
+		}
+		.text4 {
+			color: #000000;
+			font-size: 16px;
+			font-weight: bold;
+			text-align: center;
+			width: 77px;
+		}
+		.text5 {
+			color: #000000;
+			font-size: 16px;
+			font-weight: bold;
+			text-align: center;
+			width: 104px;
+		}
+		.text6 {
+			color: #000000;
+			font-size: 16px;
+			font-weight: bold;
+			text-align: center;
+			width: 91px;
+		}
+		.text7 {
+			color: #000000;
+			font-size: 16px;
+			font-weight: bold;
+			text-align: center;
+			width: 111px;
+		}
+		.text8 {
+			color: #000000;
+			font-size: 16px;
+			font-weight: bold;
+			text-align: center;
+			width: 70px;
+		}
+		.text9 {
+			color: #000000;
+			font-size: 16px;
+			font-weight: bold;
+			text-align: center;
+			width: 78px;
+		}
+		.text10 {
+			color: #1E3A1B;
+			font-size: 32px;
+			font-weight: bold;
+			text-align: center;
+			margin-bottom: 50px;
+			width: 201px;
+		}
+		.text11 {
+			color: #000000;
+			font-size: 15px;
+			margin-bottom: 10px;
+		}
+		.text12 {
+			color: #000000;
+			font-size: 15px;
+			margin-bottom: 6px;
+		}
+		.text13 {
+			color: #000000;
+			font-size: 15px;
+			margin-right: 40px;
+		}
+		.text14 {
+			color: #000000;
+			font-size: 15px;
+		}
+		.text15 {
+			color: #000000;
+			font-size: 15px;
+			margin-bottom: 15px;
+		}
+		.text16 {
+			color: #FFFFFF;
+			font-size: 15px;
+			font-weight: bold;
+			text-align: center;
+			width: 123px;
+		}
+	</style>
+</head>
+<body>
+		<div class="contain">
+		<div class="scroll-view">
+			<div class="row-view">
+				<div class="column">
+					<img
+						src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/1uul21oy.png" 
+						class="image"
+					/>
+					<div class="row-view2">
+						<img
+							src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/ra01bw97.png" 
+							class="image2"
+						/>
+						<span class="text" >
+							NutriMind
+						</span>
+					</div>
+					<img
+						src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/pvqgc6c9.png" 
+						class="image3"
+					/>
+				</div>
+				<div class="box">
+				</div>
+				<div class="row-view3">
+					<span class="text2" >
+						Search
+					</span>
+					<img
+						src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/qz1jvrvg.png" 
+						class="image4"
+					/>
+				</div>
+				<img
+					src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/d5xs45zo.png" 
+					class="image5"
+				/>
+				<img
+					src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/idmwqbv0.png" 
+					class="image6"
+				/>
+			</div>
+			<div class="row-view4">
+				<div class="column2">
+					<div class="row-view5">
+						<img
+							src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/kbtr55xx.png" 
+							class="image7"
+						/>
+						<span class="text3" >
+							Home
+						</span>
+					</div>
+					<div class="row-view6">
+						<img
+							src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/6d3upwmx.png" 
+							class="image8"
+						/>
+						<span class="text4" >
+							Recipes
+						</span>
+					</div>
+					<div class="row-view7">
+						<img
+							src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/o0beebue.png" 
+							class="image9"
+						/>
+						<span class="text4" >
+							Scan AI
+						</span>
+					</div>
+					<div class="row-view8">
+						<img
+							src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/r9mbbb34.png" 
+							class="image10"
+						/>
+						<span class="text5" >
+							My Products
+						</span>
+					</div>
+					<div class="row-view9">
+						<img
+							src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/r8vj4f0q.png" 
+							class="image11"
+						/>
+						<span class="text6" >
+							My Profile
+						</span>
+					</div>
+					<div class="row-view10">
+						<img
+							src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/sueukcd4.png" 
+							class="image12"
+						/>
+						<span class="text7" >
+							Calendar
+						</span>
+					</div>
+					<div class="row-view11">
+						<img
+							src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/fswp61o0.png" 
+							class="image13"
+						/>
+						<span class="text8" >
+							Settings
+						</span>
+					</div>
+					<div class="row-view12">
+						<img
+							src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/zwi5s0uo.png" 
+							class="image14"
+						/>
+						<span class="text9" >
+							Sign Out
+						</span>
+					</div>
+				</div>
+				<div class="column3">
+					<span class="text10" >
+						Add Recipe
+					</span>
+					<div class="column4">
+						<div class="column5">
+							<span class="text11" >
+								Meal name
+							</span>
+							<input
+								type="text"
+								placeholder="Enter your meal name"
+								class="input"
+							/>
+						</div>
+						<div class="column5">
+							<span class="text12" >
+								Description
+							</span>
+							<input
+								type="text"
+								placeholder="Enter your meal description"
+								class="input"
+							/>
+						</div>
+						<div class="column5">
+							<span class="text12" >
+								Meal photo
+							</span>
+							<button class="button"
+								onclick="alert('Pressed!')"}>
+								<img
+									src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/jq9dkqmf.png" 
+									class="image15"
+								/>
+							</button>
+						</div>
+						<div class="column5">
+							<span class="text12" >
+								Number of servings
+							</span>
+							<input
+								type="text"
+								placeholder="Enter number of servings"
+								class="input"
+							/>
+						</div>
+						<div class="column5">
+							<div class="row-view13">
+								<span class="text13" >
+									Preparation time,m
+								</span>
+								<span class="text14" >
+									Cooking time,m
+								</span>
+							</div>
+							<div class="row-view14">
+								<input
+									type="text"
+									placeholder="0 min"
+									class="input2"
+								/>
+								<input
+									type="text"
+									placeholder="0 min"
+									class="input3"
+								/>
+							</div>
+						</div>
+						<div class="column6">
+							<span class="text15" >
+								Ingredients
+							</span>
+							<div class="row-view15">
+								<img
+									src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/cz5gonpp.png" 
+									class="image16"
+								/>
+								<input
+									type="text"
+									placeholder="Add ingredient"
+									class="input4"
+								/>
+							</div>
+						</div>
+						<div class="column7">
+							<span class="text15" >
+								Directions
+							</span>
+							<div class="box2">
+							</div>
+						</div>
+						<button class="button2"
+							onclick="alert('Pressed!')"}>
+							<span class="text16" >
+								Save
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
