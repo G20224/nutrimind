@@ -1,126 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>My Recipes List - Curated and Favorite Recipes</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="description" 
-            content="Explore your curated list of favorite recipes. Add and manage your personal recipe collection with ease. Discover the joy of cooking with our Scan AI feature." />
-
-        <img alt="Logo"
-            src="https://appproject.dhiwise.com/dhiwise-logo.png?c=&v="
-            style="width: 0px; height: 0px; display: none" />
-
-        <link rel="stylesheet" type="text/css" href="../css/index.css" />
-        <link rel="stylesheet" type="text/css" href="../css/font.css" />
-        <link rel="stylesheet" type="text/css" href="../css/styles.css" />
-        <link rel="stylesheet" type="text/css" href="../css/components.css" />
-        <link rel="stylesheet" type="text/css" href="../css/Recipesmylist.css" />
-    </head>
-    <body>
-        <div class="recipes-mylist">
-            <!-- navigation bar section -->
-            <header class="header">
-                <div class="header__top-row">
-                    <img src="public/images/img_header_logo.png" alt="Headerlogo" class="header__logo" />
-                    
-                    <div class="header__search-row">
-                        <label class="header__search">
-                            <input name="search" placeholder="Search" type="text" />
-                            <img src="public/images/img_21187searchstrongicon_1.svg"
-                                alt="21187 Search Strong Icon 1"
-                                class="class-21187_search_strong_icon-1" />
-                        </label>
-                    </div>
-                </div>
-
-                <div class="header__notifications-row">
-                    <a href="#">
-                        <img src="public/images/img_notification_4_svgrepo_com.svg"
-                            alt="Notificationfour"
-                            class="header__notification-icon" />
-                    </a>
-                    <p class="header__notification-letter ui text size-textmd">A</p>
-                </div>
-            </header>
-            
-            <div class="section"> 
-                <aside class="sidebar">
-                    <ul class="sidebar__menu">
-                        <div class="sidebar__menu-section">
-                            <li>
-                                <a>
-                                    <img src="public/images/img_home_1.svg" alt="Homeone" class="sidebar__icon" />
-                                    <span>Home</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <img src="public/images/img_utensils_1.svg" alt="Utensilsone" class="sidebar__icon-1" />
-                                    <span>Recipes</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <img src="public/images/img_calendar.svg" alt="Calendar" class="sidebar__icon-1" />
-                                    <span>Scan AI</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <img src="public/images/img_box_open_1.svg" alt="Boxopenone" class="sidebar__icon-1" />
-                                    <span>My Products</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <img src="public/images/img_user_1.svg" alt="Userone" class="sidebar__icon-3" />
-                                    <span>My Profile</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <img src="public/images/img_calendar_black_900.svg" alt="Calendar" class="sidebar__icon-1" />
-                                    <span>Calendar</span>
-                                </a>
-                            </li>
-                        </div>
-                
-                        <div class="sidebar__menu-section">
-                            <li>
-                                <a>
-                                    <img src="public/images/img_settings_1.svg" alt="Settingsone" class="sidebar__icon-4" />
-                                    <span>Settings</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <img src="public/images/img_exit_1.svg" alt="Exitone" class="sidebar__icon-1" />
-                                    <span>Sign Out</span>
-                                </a>
-                            </li>
-                        </div>
-                    </ul>
-                </aside>
-                <!-- main content section -->
-                <div class="section__content">
-                    <p class="section__title ui text size-textlg">Recipes</p>
-                    <div class="section__buttons">
-                        <button class="flex-row-center-center section__button--curated">curated</button>
-                        <button class="flex-row-center-center section__button--my-list">my list</button>
-                        <button class="flex-row-center-center section__button--favorite">favorite</button>
-                    </div>
-                    
-                    <div class="section__add-recipe">
-                        <button class="section__icon-button">
-                            <img src="public/images/defaultNoData.png" />
-                        </button>
-                        <h1 class="section__add-recipe-text ui heading size-headingxs">Add recipe</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/recipesMyList.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Recipes-Mylist</title>
+</head>
+<body>
+		<div class="contain">
+		<div class="scroll-view">
+			<div class="row-view">
+				<div class="column">
+					<img
+						src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/5v3cl9id.png" 
+						class="image"
+					/>
+					<div class="row-view2">
+						<img
+							src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/1zdpqxda.png" 
+							class="image2"
+						/>
+						<img
+							src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/reb08bcm.png" 
+							class="image3"
+						/>
+					</div>
+					<div class="column2">
+						<img
+							src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/luviuf27.png" 
+							class="image4"
+						/>
+						<img
+							src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/ydj0awsv.png" 
+							class="image5"
+						/>
+					</div>
+				</div>
+				<span class="text" >
+					nutrimind
+				</span>
+				<div class="row-view3">
+					<span class="text2" >
+						Search
+					</span>
+					<img
+						src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/4l80w3rn.png" 
+						class="image6"
+					/>
+				</div>
+				<img
+					src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/7rk15cnw.png" 
+					class="image7"
+				/>
+				<img
+					src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/d4ohdbql.png" 
+					class="image8"
+				/>
+			</div>
+			<div class="row-view4">
+				<div class="column3">
+					<div class="row-view5">
+						<img
+							src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/3zwtof72.png" 
+							class="image9"
+						/>
+						<span class="text3" >
+							Home
+						</span>
+					</div>
+					<div class="row-view6">
+						<img
+							src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/zsoyu1cf.png" 
+							class="image10"
+						/>
+						<span class="text4" >
+							Recipes
+						</span>
+					</div>
+					<div class="row-view7">
+						<img
+							src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/mj9m4co3.png" 
+							class="image11"
+						/>
+						<span class="text4" >
+							Scan AI
+						</span>
+					</div>
+					<div class="row-view8">
+						<img
+							src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/oxre0vay.png" 
+							class="image12"
+						/>
+						<span class="text5" >
+							My Products
+						</span>
+					</div>
+					<div class="row-view9">
+						<img
+							src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/1pqj7gr7.png" 
+							class="image13"
+						/>
+						<span class="text6" >
+							My Profile
+						</span>
+					</div>
+					<div class="row-view10">
+						<img
+							src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/zaa7brz2.png" 
+							class="image14"
+						/>
+						<span class="text7" >
+							Calendar
+						</span>
+					</div>
+					<div class="row-view11">
+						<img
+							src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/42boagla.png" 
+							class="image15"
+						/>
+						<span class="text8" >
+							Settings
+						</span>
+					</div>
+					<div class="row-view12">
+						<img
+							src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/gp7ewq8p.png" 
+							class="image16"
+						/>
+						<span class="text8" >
+							Sign Out
+						</span>
+					</div>
+				</div>
+				<div class="column4">
+					<span class="text9" >
+						Recipes
+					</span>
+					<div class="row-view13">
+						<button class="button"
+							onclick="alert('Pressed!')"}>
+							<span class="text10" >
+								curated
+							</span>
+						</button>
+						<button class="button2"
+							onclick="alert('Pressed!')"}>
+							<span class="text11" >
+								my list
+							</span>
+						</button>
+						<button class="button3"
+							onclick="alert('Pressed!')"}>
+							<span class="text11" >
+								favorite
+							</span>
+						</button>
+					</div>
+					<div class="row-view14">
+						<img
+							src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/oere2beJ72/xq02er4v.png" 
+							class="image17"
+						/>
+						<input
+							type="text"
+							placeholder="  Add recipe"
+							class="input"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
 </html>
-    
