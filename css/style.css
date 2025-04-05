@@ -1,0 +1,293 @@
+/* Base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family:
+      Montserrat,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    background-color: rgba(250, 250, 250, 1);
+  }
+  
+  
+  /* Main content styles */
+  .main-content {
+    margin: 0 auto;
+    margin-left: 25%;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+  /* Recipe content styles */
+  .recipe-content {
+    display: flex;
+    margin-top: 50px;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+  
+  .page-title {
+    color: rgba(30, 59, 27, 1);
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.16px;
+    text-align: center;
+    align-self: start;
+  }
+  
+  .recipe-form {
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(181, 181, 181, 1);
+    align-self: end;
+    display: flex;
+    margin-top: 59px;
+    width: 621px;
+    max-width: 100%;
+    padding: 36px 62px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .form-group {
+    margin-bottom: 13px;
+  }
+  
+  .form-label {
+    color: rgba(0, 0, 0, 1);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.07px;
+    text-align: center;
+    align-self: start;
+    display: block;
+    margin-bottom: 6px;
+  }
+  
+  .form-input {
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(181, 181, 181, 1);
+    padding: 16px 10px;
+    font-family:
+      Montserrat,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 15px;
+    color: rgba(181, 181, 181, 1);
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.07px;
+    width: 100%;
+  }
+  
+  .photo-upload {
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(181, 181, 181, 1);
+    display: flex;
+    padding: 14px 62px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .upload-icon {
+    aspect-ratio: 1.18;
+    object-fit: contain;
+    object-position: center;
+    width: 20px;
+  }
+  
+  .time-container {
+    display: flex;
+    margin-top: 13px;
+    width: 338px;
+    max-width: 100%;
+    align-items: stretch;
+    gap: 40px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.07px;
+    margin-bottom: 13px;
+  }
+  
+  .time-group {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    color: rgba(0, 0, 0, 1);
+    flex: 1;
+  }
+  
+  .time-input {
+    margin-top: 8px;
+    padding: 17px 9px;
+  }
+  
+  .ingredients-label {
+    align-self: start;
+    margin-top: 13px;
+  }
+  
+  .add-container {
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(181, 181, 181, 1);
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.07px;
+  }
+  
+  .add-button-container {
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(181, 181, 181, 1);
+    display: flex;
+    padding: 13px;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .add-button {
+    background-color: rgba(52, 168, 83, 1);
+    border-radius: 50%;
+    padding: 7px;
+    color: rgba(255, 255, 255, 1);
+    white-space: nowrap;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 14px;
+    text-align: center;
+  }
+  
+  .add-text {
+    color: rgba(181, 181, 181, 1);
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 434px;
+    flex-basis: auto;
+    text-align: left;
+  }
+  
+  .save-button {
+    border-radius: 25px;
+    background-color: rgba(69, 162, 77, 1);
+    align-self: center;
+    margin-top: 40px;
+    margin-left: 14px;
+    width: 277px;
+    max-width: 100%;
+    padding: 16px 62px;
+    font-family:
+      Montserrat,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    white-space: nowrap;
+    text-align: center;
+    letter-spacing: 0.07px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Media queries */
+  @media (max-width: 1000px) {
+    .header {
+      max-width: 100%;
+      padding: 23px 20px;
+      white-space: initial;
+    }
+  
+    .search-container {
+      padding-left: 20px;
+      white-space: initial;
+    }
+  
+    .user-container {
+      white-space: initial;
+    }
+  
+    .user-avatar {
+      white-space: initial;
+    }
+  
+    .main-content {
+      max-width: 100%;
+    }
+  
+    .content-wrapper {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  
+    .sidebar {
+      width: 100%;
+      margin-top: 40px;
+      padding: 78px 20px;
+    }
+  
+    .nav-item {
+      white-space: initial;
+    }
+  
+    .nav-item--settings {
+      margin-top: 40px;
+    }
+  
+    .recipe-content {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  
+    .recipe-form {
+      padding: 36px 20px;
+      margin-top: 40px;
+    }
+  
+    .form-input {
+      padding-right: 20px;
+    }
+  
+    .photo-upload {
+      max-width: 100%;
+      padding: 14px 20px;
+    }
+  
+    .time-input {
+      padding-right: 20px;
+    }
+  
+    .add-text {
+      max-width: 100%;
+    }
+  
+    .save-button {
+      padding: 16px 20px;
+      white-space: initial;
+    }
+  }
+  

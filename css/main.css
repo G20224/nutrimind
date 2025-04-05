@@ -203,7 +203,7 @@ body {
 .image16 {
     width: 28px;
     height: 29px;
-    margin-right: 22px;
+    margin-right: 23px;
     object-fit: fill;
 }
 .image17 {
@@ -274,7 +274,7 @@ body {
     background: #F9F9F9;
     border-radius: 5px;
     border: 1px solid #C4C4C4;
-    margin-right: 202px;
+    margin-right: 35%;
 }
 .row-view4 {
     display: flex;
@@ -299,7 +299,7 @@ body {
 .row-view12 {
     display: flex;
     align-items: center;
-    margin-left: 1px;
+    margin-left: 2px;
 }
 .row-view13 {
     display: flex;
@@ -316,7 +316,7 @@ body {
     margin-left: 41px;
 }
 .scroll-view {
-    height: 838px;
+    height: 888px;
     align-self: stretch;
     display: flex;
     flex-direction: column;
@@ -388,17 +388,6 @@ body {
     color: #878787;
     font-size: 16px;
     font-family: 'Montserrat',sans-serif;
-}
-.image15 {
-    width: 20px;
-    height: 17px;
-    object-fit: fill;
-}
-.image16 {
-    width: 21px;
-    height: 20px;
-    margin-right: 13px;
-    object-fit: fill;
 }
 .text111 {
     color: #000000;
